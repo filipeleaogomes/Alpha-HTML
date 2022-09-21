@@ -21,27 +21,30 @@
                     <input type="tel" name="telefone" placeholder="xx-xxxx-xxxx" required>
                     <p></p>
 
-                    <p>Selecione o assunto:</p>
-                    <input type="radio" name="um" value="Um">
-                    <label for="um">Um</label>
-                    <input type="radio" name="dois" value="Dois">
-                    <label for="dois">Dois</label>
-                    <input type="radio" name="tres" value="Três">
-                    <label for="tres">Três</label>
+                    
+                    <label for="opçoes">Selecione uma opção :</label>
+
+                    <select name="opçoes" id="opçoes">
+                      <option value="0" required>Escolha uma das opções</option>
+                      <option value="primeiro">primeira</option>
+                      <option value="segunda">segunda</option>
+                      <option value="terceira">terceira</option>
+                      <option value="quarta">quarta</option>
+                    </select>
 
                     <p>Selecione seu sexo:</p>
 
-                    <input type="checkbox" name="homem" value="Masculino">
+                    <input type="checkbox" id="homem" value="Masculino">
                     <label for="homem">Masculino</label>
-                    <input type="checkbox" name="mulher" value="Feminino">
+                    <input type="checkbox" id="mulher" value="Feminino">
                     <label for="mulher">Feminino</label>
 
                     <p></p>
                     <label for="termos">Eu aceito os termos antes apresentados</label>
-                    <input type="checkbox" name="termos" value="termos">
+                    <input type="checkbox" id="termos" value="termos">
                     <p></p>
 
-                    <textarea name="texto" id="msg" cols="30" rows="10" placeholder="Menssagem a ser enviada"></textarea>
+                    <textarea id="msg" cols="30" rows="10" placeholder="Menssagem a ser enviada"></textarea>
                     <p></p>
 
                     <button type="submit">Enviar</button>
